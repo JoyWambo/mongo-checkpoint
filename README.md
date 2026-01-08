@@ -1,4 +1,4 @@
-## 📝 MongoDB Assignment Commands
+## 📝 MongoDB CRUD Commands
 
 ### 1. Database & Collection Creation
 
@@ -12,7 +12,7 @@ use contact
 db.createCollection("contactlist")
 ```
 
-![Create Database](Images/Screenshot 2026-01-09 \_01_create_db.png)
+![Create Database](Images/Screenshot_2026-01-09_01_create_db.png)
 
 ---
 
@@ -35,7 +35,7 @@ db.contactlist.insertMany([
 ]);
 ```
 
-![Insert Contact List](Images/Screenshot 2026-01-09_02_Insert_contact_list.png)
+![Insert Contact List](Images/Screenshot_2026-01-09_02_Insert_contact_list.png)
 
 ---
 
@@ -51,14 +51,14 @@ db.contactlist.find();
 db.contactlist.find({ _id: ObjectId("659b...") });
 ```
 
-![Find by ID](Images/Screenshot 2026-01-09_03_Find_by_ID.png)
+![Find by ID](Images/Screenshot_2026-01-09_03_Find_by_ID.png)
 
 ```javascript
 // Display all contacts with an age > 18
 db.contactlist.find({ age: { $gt: 18 } });
 ```
 
-![Greater than 18](Images/Screenshot 2026-01-09_04_Greater_than_18.png)
+![Greater than 18](Images/Screenshot_2026-01-09_04_Greater_than_18.png)
 
 ```javascript
 // Display contacts age > 18 and name containing "ah" (case-insensitive)
@@ -68,7 +68,7 @@ db.contactlist.find({
 });
 ```
 
-![Name AH](Images/Screenshot 2026-01-09_05_Name_AH.png)
+![Name AH](Images/Screenshot_2026-01-09_05_Name_AH.png)
 
 ---
 
@@ -82,7 +82,7 @@ db.contactlist.updateOne(
 );
 ```
 
-![Update Name](Images/Screenshot 2026-01-09_06_update_name.png)
+![Update Name](Images/Screenshot_2026-01-09_06_update_name.png)
 
 ---
 
@@ -102,7 +102,7 @@ db.contactlist.deleteMany({ age: { $lt: 5 } });
 db.contactlist.find();
 ```
 
-![Delete Under 5 and List All Contacts](Images/Screenshot 2026-01-09_07_Delete_under_5_and_list_all_contacts.png)
+![Delete Under 5 and List All Contacts](Images/Screenshot_2026-01-09_07_Delete_under_5_and_list_all_contacts.png)
 
 ---
 
