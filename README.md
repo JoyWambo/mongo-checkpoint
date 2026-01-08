@@ -1,5 +1,7 @@
 ## 📝 MongoDB CRUD Commands
 
+A collection of MongoDB scripts demonstrating essential CRUD operations (Create, Read, Update, Delete) using mongosh. This project covers database creation, complex querying with logical operators and regex, and data maintenance for a contact management system.
+
 ### 1. Database & Collection Creation
 
 In MongoDB, databases and collections are created lazily upon the first data insertion.
